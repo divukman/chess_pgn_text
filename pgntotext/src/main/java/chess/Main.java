@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println();
 
-        PgnHolder pgn = new PgnHolder("C:\\Users\\Dimitar\\Dropbox\\Instrukcije\\171. lekcija\\domaci.pgn");//args[0]); //"C:\\Users\\Dimitar\\Dropbox\\Instrukcije\\171. lekcija\\domaci.pgn"
+        PgnHolder pgn = new PgnHolder("C:\\D1.pgn");//"C:\\Morphy.pgn");//args[0]); //"C:\\Users\\Dimitar\\Dropbox\\Instrukcije\\171. lekcija\\domaci.pgn"
         pgn.loadPgn();
         for (Game game: pgn.getGame()) {
 
