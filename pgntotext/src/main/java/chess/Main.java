@@ -8,13 +8,13 @@ public class Main {
     public static void main(String args[]) throws Exception {
         int numOfGames = 1;
 
-//        if (args.length < 1) {
-//            throw new RuntimeException("Missing file path.");
-//        }
+        if (args.length < 1) {
+            throw new RuntimeException("Missing file path.");
+        }
 
         System.out.println();
 
-        PgnHolder pgn = new PgnHolder("C:\\D1.pgn");//"C:\\Morphy.pgn");//args[0]); //"C:\\Users\\Dimitar\\Dropbox\\Instrukcije\\171. lekcija\\domaci.pgn"
+        PgnHolder pgn = new PgnHolder(args[0]);
         pgn.loadPgn();
         for (Game game: pgn.getGame()) {
 
