@@ -14,7 +14,9 @@ public class Main {
 
         System.out.println();
 
-        PgnHolder pgn = new PgnHolder(args[0]);
+         final String path = args[0]; //my path
+
+        PgnHolder pgn = new PgnHolder(path);
         pgn.loadPgn();
         for (Game game: pgn.getGame()) {
 
@@ -39,7 +41,7 @@ public class Main {
             System.out.println("-----------------");
             System.out.println("Nastavak:");
 
-            System.out.println();
+            System.out.print(game.getMoveText() != null ? game.getMoveText().toString(): "");
 
             ++numOfGames;
         }
